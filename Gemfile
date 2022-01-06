@@ -10,8 +10,8 @@ gem 'react-rails'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use pg as the database for Active Record
+# gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -33,7 +33,7 @@ gem "jbuilder"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
-# gem "sqlite3"
+# gem "pg"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
@@ -73,9 +73,9 @@ group :test do
 end
 
 
-group :development, :test do
- gem 'sqlite3','~> 1.4'
-end
+# group :development, :test do
+#  gem 'pg','~> 1.4'
+# end
 
 group :production do
   gem 'pg', '0.15.1'
